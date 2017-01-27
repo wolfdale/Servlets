@@ -853,7 +853,7 @@ exists or setup the property manually. For example like this:
                 COMPILATION SECTION
             -->
     <target depends="init" if="no.dist.ear.dir" name="deps-module-jar" unless="no.deps">
-        <ant antfile="${project.Intro-ejb}/build.xml" inheritall="false" target="dist"/>
+        
     </target>
     <target depends="init" if="dist.ear.dir" name="deps-ear-jar" unless="no.deps">
         <ant antfile="${project.Intro-ejb}/build.xml" inheritall="false" target="dist-ear">
